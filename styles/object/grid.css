@@ -1,0 +1,25 @@
+.content-container {
+	max-width: var(--grid-container);
+	margin-left: auto;
+	margin-right: auto;
+/*	padding-right: 30px;
+	padding-left: 30px;*/
+}
+
+.row::after,
+.row::before {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.row--4 > .col {
+	float: left;
+	max-width: 215px;
+	width: 25%;
+	margin-right: 20px;
+}
+
+.row .col:nth-child(4n){
+	margin-right: 0px;
+}

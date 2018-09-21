@@ -1,0 +1,15 @@
+.btn {
+	border-radius: 5px;
+	border: solid;
+	font-weight: bold;
+}
+
+.btn-sign {
+	height: 40px;
+	width: 450px;
+}
+
+.btn-icon {
+	height: 24px;
+	width: auto;
+}
