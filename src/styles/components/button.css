@@ -1,0 +1,42 @@
+.sign {
+  margin-right: auto;
+  margin-left: auto;
+  height: 40px;
+  width: 450px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.sign-primary {
+  background-color: var(--highlight-primary-color);
+  color: white;
+  border-color: var(--highlight-primary-color);
+}
+
+.sign-secondry {
+  background-color: transparent;
+  color: var(--highlight-secondary-color);
+  border: none;
+}
+
+.center {
+  margin-top: 7px;
+}
+
+.modal_btn {
+  display: inline-block;
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
+  background-color: white;
+  height: 24px;
+  min-width: 68px;
+  padding: 0 8px;
+  margin-left: 8px;
+  float: right;
+    & h4 {
+      margin: 0;
+      display: inline-block;
+    }
+}
+
+

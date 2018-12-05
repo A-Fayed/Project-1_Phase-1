@@ -1,0 +1,24 @@
+.action {
+  width: 20px;
+  height: 17px;
+  vertical-align: middle;
+  display: inline-block;
+  &__view {
+    background: url(../images/Exclude.svg) 50% 50% no-repeat;
+  }
+  &__comment {
+    background: url(../images/chat.svg) 50% 50% no-repeat;
+  }
+  &__love {
+    background: url(../images/heart.svg) 50% 50% no-repeat;
+  }
+  &__save {
+    background: url(../images/save.svg) 50% 50% no-repeat;
+  }
+  &__link {
+    background: url(../images/link.svg) 50% 50% no-repeat;
+    position: relative;
+    right: 3px;
+    bottom: 1px;
+  }
+}

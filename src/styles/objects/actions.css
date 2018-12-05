@@ -1,0 +1,31 @@
+/*.actions {
+  width: 150px;
+  height: 35%;
+  border: solid 1px black;
+  padding: 0.5%;
+  display: inline-block;
+  background-color: red;
+  vertical-align: middle;
+}*/
+
+.actions a {
+  display: inline-block;
+  width: 20%;
+  height: 100%;
+  background-color: blue;
+  background: url(../images/heart.svg) 50% 50% no-repeat;
+  background-size: 90% 90%;
+}
+
+.actions__count {
+  display: inline;
+  width: 76%;
+  height: 100%;
+  background-color: blue;
+  vertical-align: middle;
+  & span {
+    display: inherit;
+    margin: 0;
+    vertical-align: middle;
+  }
+}

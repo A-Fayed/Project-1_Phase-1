@@ -1,0 +1,94 @@
+.card {
+  border-radius: 5px;
+  display: inline-block;
+  float: left;
+  padding: 0 10px;
+  margin-bottom: 20px;
+  transition: ease-in-out all 0.5s;
+  &__media {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0.5px 1px 0.5px 0.5px #ddd;
+    overflow: hidden;
+    padding: 8px 8px 0px 8px;
+    & img {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      height: 100%;
+      cursor: pointer;
+    }
+  }
+  &__item {
+    overflow: hidden;
+    position: relative;
+    padding-top: 70%;
+  }
+  &__actions {
+    width: 100%;
+    text-align: right;
+    padding-right: 8px;
+    line-height: 28px;
+    padding-left: 0px;
+    color: var(--secondary-color);
+    & li {
+      display: inline-block;
+    }
+    & h5 {
+      margin:0;
+      display: inline-block;
+      font-weight: normal;
+      font-size: 11px;
+    }
+  }
+  &__action{
+    display: inline-block;
+    width: 20px;
+    height: 17px;
+    background-size: 20px;
+    vertical-align: middle;
+  }
+  &__title {
+    margin-top: 16px;
+    & span {
+      display: inline-block;
+      background-size: contain;
+      height: 16px;
+      width: 16px;
+      border-radius: 50%;
+      background: url(../images/card-icon.png) 50% 50% no-repeat;
+      vertical-align: middle;
+    }
+    & a {
+        cursor: pointer;
+    }
+    & h4 {
+      display: inline-block;
+      margin: 0px;
+      font-size: 13px;
+      line-height: 23px;
+      color: var(--highlight-secondary-color);
+    }
+  }
+  &__view {
+    background: url(../images/Exclude.svg) 50% 50% no-repeat;
+  }
+  &__comment {
+    background: url(../images/chat.svg) 50% 50% no-repeat;
+  }
+  &__love {
+    background: url(../images/heart.svg) 50% 50% no-repeat;
+  }
+  &__link {
+    background: url(../images/link.svg) 50% 50% no-repeat;
+    position: relative;
+    right: 3px;
+    bottom: 1px;
+  }
+}
+
+

@@ -1,0 +1,57 @@
+.header {
+  background: #333;
+  height: 40px;
+  line-height: 40px;
+  & h1 {
+    display: inline-block;
+    margin: 0px;
+    height: 40px;
+    overflow: hidden;
+    float: left;
+  }
+  &__logo {
+    height: 80px;
+    position: relative;
+    bottom: 20px;
+  }
+  &__list {
+    margin:0;
+    padding: 0;
+    float: left;
+    & li {
+      display: inline-block;
+    }
+    & a{
+      color: var(--tertiary-color);
+    }
+  }
+  &__user {
+    padding-left: 10px;
+    & li {
+      display: inline-block;
+      cursor: pointer;
+      & span {
+        color: var(--tertiary-color)
+      }
+    }
+  }
+  &__extra {
+    float: right;
+    width: 35%;
+  }
+  &__search {
+    display: inline-block;
+    margin-left: 20px;
+    float: right;
+    & input {
+      background-color: var(--tertiary-color);
+      border: solid 1px #aaa;
+      border-radius: 5px;
+      padding:2.5px 10px;
+    }
+  }
+}
+
+.header__search input::placeholder {
+  color: #eee;
+}

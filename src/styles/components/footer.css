@@ -1,0 +1,11 @@
+footer {
+  text-align: center;
+  margin-top: 6px;
+}
+
+footer h5 {
+  margin: 0;
+  outline: solid 1px #e5e5e5;
+  height: 50px;
+  line-height: 50px;
+}

@@ -1,0 +1,16 @@
+header.header
+  .container.clearfix
+    h1
+      img( class="header__logo" alt="dribble" src="images/dribbble.png")
+    ul.header__list.list
+      li(class=page ==='dribbbles' ? 'active' : ''): a(href="dribbles.html") Dribbbles
+      li(class=page ==='buckets' ? 'active' : ''): a(href="buckets.html") Buckets
+      li(class=page ==='users' ? 'active' : ''): a(href="users.html") Users
+      li(class=page ==='lists' ? 'active' : ''): a(href="lists.html") Lists
+    .header__extra
+      ul.header__user.list
+        li: span Signup
+        li: span Signin
+      form.header__search
+        label(for="search-dribbles").sr-only search dribbles
+        input(type="text" id="search-dribbles" name="search-dribbles" placeholder="Search Dribbles")

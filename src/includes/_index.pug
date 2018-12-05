@@ -1,0 +1,101 @@
+.container
+  h2 Dribbles
+  .row--4
+    - var imgArray = ["images/card-media-1.jpg", "images/card-media-2.jpg", "images/card-media-3.jpg", "images/card-media-4.jpg", "images/card-media-5.jpg"]
+    - for (var i=0; i<16 ;i++){
+      - for (var j=0; j<5; j++){
+        .card.col
+          .card__content
+            .card__media
+              .card__item
+                img(src=imgArray[j])
+              ul.card__actions.list
+                li
+                  a(href="#modal" data-lity).action.action__view
+                    span.sr-only viewed
+                  h5 4,234
+                  span.sr-only times
+                li
+                  a(href="#").action.action__comment 
+                    span.sr-only commented
+                  h5 42
+                  span.sr-only times
+                li
+                  a(href="#").action.action__love
+                    span.sr-only loved
+                  h5 4
+                  span.sr-only times
+          .card__title
+            span 
+            a
+              h4 someonename
+      - } 
+    - }
+    .center
+      button(type="button").btn.sign.sign-primary Sign up to continue
+      button(type="button").btn.sign.sign-secondry or sign in
+.modal.lity-hide#modal
+  .modal__header
+    .modal__title.clearfix
+      .modal__icon
+        img(src="../images/card-icon.png" alt="user icon")
+      .modal__details
+        h3 Pay Junctio - Paper Receipts
+        p by
+        h4 Eddie Lobani
+        p on
+        p.time August 20,2018
+    .modal__actions
+      button(type="button").btn.modal_btn 
+        span.card__action.card__view 
+        h4 Like
+      button(type="button").btn.modal_btn 
+        h4 Save
+  .modal__media
+    img(src="../images/card-media-2.jpg" alt="dribble media")
+  .modal__footer.row--3.clearfix
+    .modal__info.col--2
+      p Lorem ipsum amet dolore occaecat dolor ex excepteur ullamco nulla adipisicing aute in consectetur dolor cillum aliquip culpa culpa pariatur ullamco sint sit irure esse amet est ullamco cupidatat mollit sint tempor.
+      .modal__responses
+        h3 Responses
+        .modal__comment
+          .modal__icon
+            img(src="../images/card-icon.png" alt="user icon")
+          .comment__content
+            h4 username
+            p Lorem ipsum amet dolore occaecat dolor ex excepteur ullamco nulla adipisicing aute in consectetur dolor cillum aliquip culpa culpa pariatur ullamco sint sit irure esse amet est ullamco cupidatat mollit sint tempor.
+            h5.time August 20,2018
+            .comment__actions
+              span.action.action__love
+              h5 12
+        .modal__comment
+          .modal__icon
+            img(src="../images/card-icon.png" alt="user icon")
+          .comment__content
+            h4 username
+            p Lorem ipsum amet dolore occaecat dolor ex excepteur ullamco nulla adipisicing aute in consectetur dolor cillum aliquip culpa culpa pariatur ullamco sint sit irure esse amet est ullamco cupidatat mollit sint tempor.
+            h5.time August 20,2018
+            .comment__actions
+              span.action.action__love
+              h5 12
+    .modal__statistics.col
+      button(type="button").btn.modal_btn 
+        span.action.action__link
+        h4 Copy link
+      ul.modal__actions.list
+        li
+          a(href="https://www.youtube.com/watch?v=XSGBVzeBUbk" data-lity).action.action__view
+            span.sr-only viewed
+          h5 4,234
+          span.sr-only times
+        li
+          a(href="#").action.action__comment 
+            span.sr-only commented
+          h5 42
+          span.sr-only times
+        li
+          a(href="#").action.action__save
+            span.sr-only saved
+          h5 42
+          span.sr-only times
+

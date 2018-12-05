@@ -1,0 +1,8 @@
+.media__img {
+	float: left;
+	margin-right: 15px;
+}
+
+.media__content {
+	overflow: auto;
+}

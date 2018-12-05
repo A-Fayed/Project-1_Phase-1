@@ -1,0 +1,194 @@
+@charset "utf-8";
+
+*, ::before, ::after {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Helvetica, sans-serif;
+	font-size: 16px;
+}
+
+input, textarea, button, select {
+	font-family: inherit;
+	font-size: inherit;
+}
+.form fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+.form select,
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"],
+.form input[type="number"],
+.form input[type="date"] {
+	display: block;
+	width: 100%;
+	height: 40px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background: #fff;
+	border: 1px solid #ccc;
+}
+
+.form input:focus {
+	outline: 1px solid #00B288;
+}
+
+.form label {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.form .form-group {
+	margin-bottom: 25px;
+}
+
+.form legend {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.form__title {
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.form__section-title {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+.form .form__section {
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 20px;
+}
+.form .form__section:last-child {
+	border-bottom: 0;
+	margin-bottom: 0;
+}
+.form__action {
+	text-align: center;
+}
+.form__action .button {
+	vertical-align: top;
+}
+
+.custom-checkbox {
+	position: relative;
+}
+
+.custom-checkbox input {
+	position: absolute;
+	opacity: 0;
+}
+
+.custom-checkbox input:focus + label::before {
+	box-shadow: 0 0 4px #000;
+}
+
+.custom-checkbox label::before {
+	position: relative;
+	top: -2px;
+	content: '';
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	border: 1px solid #00B288;
+	background-color: #fff;
+	margin-right: 15px;
+	vertical-align: middle;
+	cursor: pointer;
+	font-size: 10px;
+	text-align: center;
+	line-height: 14px;
+	border-radius: 50%;
+	transition: 0.5s all ease;
+}
+
+/*.custom-checkbox input:checked + label::after {
+	content: '';
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	background-color: #00B288;
+	position: absolute;
+	left: 5px;
+	top: 6px;
+}
+*/
+
+.custom-checkbox input:checked ~ label::before {
+	color: #fff;
+	background-color: #00B288;
+	box-shadow: 0 0 0 3px #fff inset;
+/*	box-shadow: 0 1px 0 0 red,
+							0 2px 0 0 orange,
+							0 3px 0 0 yellow;*/
+}
+
+.custom-select {
+	position: relative;
+}
+
+.custom-select::after {
+	content: "";
+	position: absolute;
+	border-width: 10px;
+	border-color: #00B288 transparent transparent;
+	border-style: solid;
+	width: 0;
+	height: 0;
+	top: 50%;
+	right: 15px;
+	margin-top: -5px;
+	pointer-events: none;
+}
+
+.custom-select:focus-within::after {
+	transform: rotate(180deg);
+	top: 10px;
+}
+
+.custom-select select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: 0;
+	/*opacity: 0;*/
+}
+
+input[type="file"] {
+	position: absolute;
+	opacity: 0;
+}
+
+.custom-select {
+	border: 1px solid #ccc;
+}
+
+.button {
+	height: 40px;
+	background: pink;
+	display: inline-block;
+	text-decoration: none;
+	line-height: 36px;
+	padding: 0 40px;
+	border-radius: 40px;
+	cursor: pointer;
+	background-color: #00B288;
+	border: 2px solid #00B288;
+	color: #fff;
+}
+
+.button--outline {
+	background-color: #fff;
+	color: #00B288;
+}
+
+.button + .button {
+	margin-left: 10px;
+}
